@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Eric Phillips - CSC 489 Weather Application Project</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Weather Forecast</h1>
+  <div class="container">
+    <div class="weather-input">
+      <h3>Enter a City Name</h3>
+      <input class="city-input" type="text" placeholder="E.g., Wilmington, Milwaukee">
+      <div class="separator"></div>
+      <h3>Enter a ZIP Code</h3>
+      <input class="zip-input" type="text" placeholder="E.g., 19801, 90210">
+      <button class="search-btn">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn">Use Current Location</button>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2></h2>
+          <h3>Current Conditions</h3>
+          <h6>Temp: °F</h6>
+          <h6>Feels Like: °F</h6>
+          <h6>Wind:  Mph</h6>
+          <h6>Humidity: %</h6>
+        </div>
+      </div>
+
+<!-- Weather Overview Section -->
+<div class="weather-overview">
+  <h1>Weather Overview</h1>
+  <p id="weather-overview-text"></p>
+</div>
+
+      <div class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h3></h3>
+            <h6>Temp: °F</h6>
+            <h6>Feels Like: °F</h6>
+            <h6>Wind:  Mph</h6>
+            <h6>Humidity: %</h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Marine Forecast Section -->
+  <div class="marine-forecast">
+    <h1>Marine Forecast</h1>
+    <div class="current-marine">
+      <h3>Current Conditions</h3>
+      <ul>
+        <li>Wave Height: <span id="current-wave-height"></span></li>
+        <li>Wave Direction: <span id="current-wave-direction"></span></li>
+        <li>Wave Period: <span id="current-wave-period"></span></li>
+        <li>Wind Wave Height: <span id="current-wind-wave-height"></span></li>
+      </ul>
+    </div>
+    <div class="hourly-marine">
+      <h3>Hourly Forecast</h3>
+      <ul id="hourly-marine-list"></ul>
+    </div>
+    <div class="daily-marine">
+      <h3>Daily Forecast (Max Wave Height & Period)</h3>
+      <ul id="daily-marine-list"></ul>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer">
+      <ul>
+        <li>Author: Eric Phillips</li>
+      </ul>
+      <p><a href="mailto:EricHPhillips711@gmail.com">EricHPhillips711@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
